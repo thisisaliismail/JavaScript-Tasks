@@ -1,0 +1,95 @@
+#pong{
+    /* border: 2px solid #FFF; */
+    position: absolute;
+    margin :auto;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+}
+
+#startScreen {
+  margin: auto;
+  /* margin-top: 50px; */
+  position: absolute;
+  margin :auto;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  width: 600px;
+  height: 400px;
+  /* background-color: whitesmoke; */
+  background-image: url("img/bgpingpong.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+  text-align: center;
+  border: 8px solid;
+  border-radius: 10px;
+  box-shadow: 0 1px 32px white;
+  transform: rotate(0) scale(0);
+  animation: boom 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes boom {
+  100% {
+    transform: rotate(1080deg) scale(1);
+  }
+}
+
+#startScreen div {
+  height: 50%;
+}
+
+#startScreen h1 {
+  position:absolute;
+  width: 100%;
+  color: #222;
+  font-size: 40px;
+  text-shadow: 0 1px 2px;
+  animation: pulse 6s linear infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+#startScreen p {
+  font-weight: bold;
+  font-size: 20px;
+  color: crimson;
+  position: absolute;
+  left: 10px;
+}
+
+#startScreen span {
+  position: relative;
+  font-size: 18px;
+  animation: up 2s linear infinite;
+  animation-delay: 3s;
+}
+
+@keyframes up {
+  25% {
+    top: -4px;
+  }
+}
+
+#gameOn {
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 0 2px 0 limegreen, 0 1px 64px white;
+  animation: pulse 1.5s linear infinite;
+}
+
+img{
+  width: 200px;
+  position: relative;
+  margin: auto;
+  top: 9px;
+}
